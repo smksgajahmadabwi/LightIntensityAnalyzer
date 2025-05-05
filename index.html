@@ -207,7 +207,7 @@
   let animationId;
   let currentFacingMode = 'environment';
   let isFlipped = false;
-  let maxLux = 50000; // Default: 100% = 50,000 lux
+  let maxLux = 100; // Default: 100% = 50,000 lux
 
   // Initialize chart
   function initChart() {
@@ -417,7 +417,7 @@
   frontCameraBtn.addEventListener('click', () => startCamera('user'));
   flipBtn.addEventListener('click', flipCamera);
   calibrationInput.addEventListener('change', function(e) {
-    maxLux = parseInt(e.target.value) || 50000;
+    maxLux = parseInt(e.target.value) || 100;
   });
 
   // Initialize
