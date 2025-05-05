@@ -147,7 +147,7 @@
     
     <div id="calibrationPanel">
       Kalibrasi: 
-      <input type="number" id="calibrationValue" value="100" min="10" step="10"> lux
+      <input type="number" id="calibrationValue" value="100" min="5" step="5"> lux
       <small>(at 100%)</small>
     </div>
     
@@ -207,7 +207,7 @@
   let animationId;
   let currentFacingMode = 'environment';
   let isFlipped = false;
-  let maxLux = 100; // Default: 100% = 50,000 lux
+  let maxLux = 50000; // Default: 100% = 50,000 lux
 
   // Initialize chart
   function initChart() {
