@@ -417,7 +417,7 @@
   frontCameraBtn.addEventListener('click', () => startCamera('user'));
   flipBtn.addEventListener('click', flipCamera);
   calibrationInput.addEventListener('change', function(e) {
-    maxLux = parseInt(e.target.value) || 100;
+    maxLux = parseInt(e.target.value) || 50000;
   });
 
   // Initialize
